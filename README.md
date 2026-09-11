@@ -1,3 +1,6 @@
+## Fork differences
+- To avoid very long name files, renamed BlueprintComponentReferencePlugin to BCRP
+
 [![GitHub release](https://img.shields.io/github/release/aquanox/BlueprintComponentReferencePlugin.svg)](https://github.com/aquanox/BlueprintComponentReferencePlugin/releases)
 [![GitHub license](https://img.shields.io/github/license/aquanox/BlueprintComponentReferencePlugin)](https://github.com/aquanox/BlueprintComponentReferencePlugin/blob/main/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/aquanox/BlueprintComponentReferencePlugin)](https://github.com/aquanox/BlueprintComponentReferencePlugin/network)
