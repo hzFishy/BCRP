@@ -4,7 +4,7 @@
 
 #include "BlueprintComponentReference.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "BlueprintComponentReferenceLibrary.generated.h"
+#include "BCRLibrary.generated.h"
 
 class UActorComponent;
 

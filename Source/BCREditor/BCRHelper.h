@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Engine/World.h"
 #include "Misc/EngineVersionComparison.h"
 #include "Context/ComponentPickerContext.h"
@@ -23,7 +23,7 @@ inline static FName GetFNameSafe(const UObject* InField)
  * BCR customization manager.
  *
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FBlueprintComponentReferenceHelper
+class BCREDITOR_API FBlueprintComponentReferenceHelper
 {
 public:
 	/**

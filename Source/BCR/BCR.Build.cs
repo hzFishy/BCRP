@@ -2,13 +2,13 @@
 
 using UnrealBuildTool;
 
-public class BlueprintComponentReferenceTests : ModuleRules
+public class BCR : ModuleRules
 {
 	// This is to emulate engine installation and verify includes during development
 	// Gives effect similar to BuildPlugin with -StrictIncludes
 	public bool bStrictIncludesCheck = false;
 
-	public BlueprintComponentReferenceTests(ReadOnlyTargetRules Target) : base(Target)
+	public BCR(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -21,21 +21,11 @@ public class BlueprintComponentReferenceTests : ModuleRules
 		}
 
 		PublicIncludePaths.Add(ModuleDirectory);
-		PrivateDefinitions.Add("WITH_CACHED_COMPONENT_REFERENCE_TESTS=1");
 
 		PublicDependencyModuleNames.AddRange(new string[] {
-			"Core",
-			"CoreUObject",
-			"Engine",
-			"BlueprintComponentReference",
-			"BlueprintComponentReferenceEditor"
+				"Core",
+				"CoreUObject",
+				"Engine"
 		});
-		
-		if (Target.Version.MajorVersion >= 5)
-		{
-			PrivateDependencyModuleNames.AddRange(new string[] {
-				"AutomationTest"
-			});
-		}
 	}
 }

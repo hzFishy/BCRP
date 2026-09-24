@@ -7,7 +7,7 @@
 #include "Components/ActorComponent.h"
 #include "MetadataCore/MetadataMarshallerContainer.h"
 
-#include "BlueprintComponentReferenceMetadata.generated.h"
+#include "BCRMetadata.generated.h"
 
 struct FCRMetadataKey
 {
@@ -49,7 +49,7 @@ enum class EBlueprintComponentReferenceViewMode
  * Internal struct for blueprint property configuration and view settings
  */
 USTRUCT()
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FBlueprintComponentReferenceMetadata : public FMetadataContainerBase
+struct BCREDITOR_API FBCRMetadata : public FMetadataContainerBase
 {
 	GENERATED_BODY()
 public:

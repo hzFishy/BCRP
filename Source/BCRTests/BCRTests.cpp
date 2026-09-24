@@ -1,12 +1,12 @@
 // Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReferenceTests.h"
+#include "BCRTests.h"
 #include "BCRTestActor.h"
 #include "BCRTestDataAsset.h"
 #include "BCRTestActorComponent.h"
-#include "BlueprintComponentReference.h"
-#include "BlueprintComponentReferenceLibrary.h"
-#include "BlueprintComponentReferenceMetadata.h"
+#include "BCR.h"
+#include "BCRLibrary.h"
+#include "BCRMetadata.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 #include "Stats/StatsMisc.h"
@@ -15,7 +15,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
-IMPLEMENT_MODULE(FDefaultModuleImpl, BlueprintComponentReferenceTests);
+IMPLEMENT_MODULE(FDefaultModuleImpl, BCRTests);
 
 #if WITH_DEV_AUTOMATION_TESTS
 

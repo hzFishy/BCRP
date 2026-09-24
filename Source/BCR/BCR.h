@@ -4,7 +4,7 @@
 
 #include "UObject/SoftObjectPtr.h"
 #include "Components/ActorComponent.h"
-#include "BlueprintComponentReference.generated.h"
+#include "BCR.generated.h"
 
 /**
  * Defines method which ComponentReference resolves the component from actor

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Containers/Map.h"
 #include "Containers/Array.h"
 #include "UObject/ObjectKey.h"

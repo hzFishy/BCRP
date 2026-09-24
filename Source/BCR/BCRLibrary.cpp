@@ -1,6 +1,6 @@
 ﻿// Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReferenceLibrary.h"
+#include "BCRLibrary.h"
 #include "Components/ActorComponent.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/BlueprintMapLibrary.h"
