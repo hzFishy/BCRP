@@ -1,7 +1,7 @@
 ﻿#pragma once
 
-#include "BlueprintComponentReferenceExtras.h"
-#include "BlueprintComponentReferenceCustomization.h"
+#include "BCRExtras.h"
+#include "BCRCustomization.h"
 
 #if defined(WITH_BCR_EXTRAS) && WITH_BCR_EXTRAS
 
@@ -10,7 +10,7 @@
  *
  * This is an example on creating custom BCR customizations
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMeshSocketReferenceCustomization
+class BCREDITOR_API FMeshSocketReferenceCustomization
 	: public FBlueprintComponentReferenceCustomization
 {
 	using Super = FBlueprintComponentReferenceCustomization;

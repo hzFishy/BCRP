@@ -1,8 +1,7 @@
 ﻿// Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReferenceHelper.h"
-
-#include "BlueprintComponentReferenceEditor.h"
+#include "BCRHelper.h"
+#include "BCREditor.h"
 #include "BlueprintComponentReferenceMetadata.h"
 #include "Engine/World.h"
 #include "GameFramework/Pawn.h"

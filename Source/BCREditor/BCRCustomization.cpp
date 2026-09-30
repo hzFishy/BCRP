@@ -1,8 +1,7 @@
 // Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReferenceCustomization.h"
-
-#include "BlueprintComponentReferenceEditor.h"
+#include "BCRCustomization.h"
+#include "BCREditor.h"
 #include "BlueprintEditor.h"
 #include "BlueprintEditorTabs.h"
 #include "DetailWidgetRow.h"

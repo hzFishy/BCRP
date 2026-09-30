@@ -101,7 +101,7 @@ enum class EBlueprintComponentReferenceMode : uint8
  *
  */
 USTRUCT(BlueprintType, meta=(DisableSplitPin))
-struct BLUEPRINTCOMPONENTREFERENCE_API FBlueprintComponentReference
+struct BCR_API FBlueprintComponentReference
 {
 	GENERATED_BODY()
 public:

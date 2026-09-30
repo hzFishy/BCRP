@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "BCRTestStruct.generated.h"
 
 USTRUCT(BlueprintType)

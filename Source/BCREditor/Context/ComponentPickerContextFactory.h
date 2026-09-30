@@ -21,7 +21,7 @@ public:
 /**
  * Holds internal data about hierarchies and components.
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FLegacyContextFactory : public FComponentPickerContextFactory
+class BCREDITOR_API FLegacyContextFactory : public FComponentPickerContextFactory
 {
 	using FInstanceKey = TTuple<FName /* fn */, FName /* name */, FName /* class */>;
 	using FClassKey = TTuple<FName /* fn */, FName /* class */>;
@@ -122,7 +122,7 @@ private:
 /**
  * Context backed by USubobjectDataSubsystem
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FSubsystemComponentPickerContext : public FComponentPickerContextBase
+struct BCREDITOR_API FSubsystemComponentPickerContext : public FComponentPickerContextBase
 {
 	// todo: implement me
 };

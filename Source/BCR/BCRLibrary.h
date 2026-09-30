@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "BCRLibrary.generated.h"
 
@@ -19,7 +19,7 @@ enum class EComponentSearchResult : uint8
  * Helper functions to interact with component references from blueprints
  */
 UCLASS()
-class BLUEPRINTCOMPONENTREFERENCE_API UBlueprintComponentReferenceLibrary : public UBlueprintFunctionLibrary
+class BCR_API UBlueprintComponentReferenceLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "BlueprintComponentReference.h"
-#include "BlueprintComponentReferenceExtras.h"
+#include "BCR.h"
+#include "BCRExtras.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Info.h"
 #include "Engine/EngineTypes.h"
@@ -15,7 +15,7 @@
 #include "BCRTestActorComponent.h"
 
 #if WITH_CACHED_COMPONENT_REFERENCE_TESTS
-#include "CachedBlueprintComponentReference.h"
+#include "CachedBCR.h"
 #endif
 
 #include "BCRTestActor.generated.h"

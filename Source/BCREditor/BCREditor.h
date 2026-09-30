@@ -13,7 +13,7 @@ class FPropertyEditorModule;
 class IPropertyTypeCustomization;
 enum class EReloadCompleteReason;
 
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FBCREditorModule : public IModuleInterface
+class BCREDITOR_API FBCREditorModule : public IModuleInterface
 {
 public:
 	/**

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "BlueprintComponentReferenceLibrary.h"
+#include "BCRLibrary.h"
 #include "BlueprintComponentReferenceMetadata.h"
 #include "IDetailCustomization.h"
 #include "IDetailCustomNodeBuilder.h"
@@ -14,7 +14,7 @@ class UBlueprint;
 /**
  *
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMetadataEditorVarCustomization : public IDetailCustomization
+class BCREDITOR_API FMetadataEditorVarCustomization : public IDetailCustomization
 {
 	using ThisClass = FMetadataEditorVarCustomization;
 public:

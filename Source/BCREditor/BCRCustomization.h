@@ -2,9 +2,9 @@
 
 #pragma once
 
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "BlueprintComponentReferenceMetadata.h"
-#include "BlueprintComponentReferenceHelper.h"
+#include "BCRHelper.h"
 #include "IDetailCustomNodeBuilder.h"
 #include "IPropertyTypeCustomization.h"
 #include "PropertyHandle.h"
@@ -27,7 +27,7 @@ class FDragDropEvent;
 /**
  * Component reference cutomization class
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FBlueprintComponentReferenceCustomization
+class BCREDITOR_API FBlueprintComponentReferenceCustomization
 	: public IPropertyTypeCustomization
 {
 	using ThisClass = FBlueprintComponentReferenceCustomization;

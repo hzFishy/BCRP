@@ -1,9 +1,7 @@
 ﻿#pragma once
 
-#include "CoreMinimal.h"
-#include "BlueprintComponentReference.h"
-
-#include "BlueprintComponentReferenceExtras.generated.h"
+#include "BCR.h"
+#include "BCRExtras.generated.h"
 
 #define WITH_BCR_EXTRAS 1
 

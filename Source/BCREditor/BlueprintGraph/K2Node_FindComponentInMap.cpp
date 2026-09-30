@@ -1,9 +1,8 @@
 ﻿// Copyright 2024, Aquanox.
 
 #include "K2Node_FindComponentInMap.h"
-
 #include "BlueprintActionDatabaseRegistrar.h"
-#include "BlueprintComponentReferenceLibrary.h"
+#include "BCRLibrary.h"
 #include "BlueprintNodeSpawner.h"
 #include "EdGraphSchema_K2.h"
 

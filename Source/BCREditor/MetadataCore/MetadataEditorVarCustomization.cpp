@@ -1,10 +1,9 @@
 ﻿// Copyright 2024, Aquanox.
 
 #include "MetadataEditorVarCustomization.h"
-
-#include "BlueprintComponentReferenceCustomization.h"
-#include "BlueprintComponentReferenceHelper.h"
-#include "BlueprintComponentReferenceEditor.h"
+#include "BCRCustomization.h"
+#include "BCRHelper.h"
+#include "BCREditor.h"
 #include "BlueprintEditorModule.h"
 #include "DetailCategoryBuilder.h"
 #include "DetailLayoutBuilder.h"

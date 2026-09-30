@@ -6,7 +6,7 @@
 #include "BCRTestActorComponent.h"
 #include "BCR.h"
 #include "BCRLibrary.h"
-#include "BCRMetadata.h"
+#include "BlueprintComponentReferenceMetadata.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 #include "Stats/StatsMisc.h"

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "GameFramework/Actor.h"
 #include "Components/ActorComponent.h"
 #include "Components/SceneComponent.h"

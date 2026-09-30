@@ -22,16 +22,16 @@ const FName FCRMetadataKey::ShowRoot = "ShowRoot";
 const FName FCRMetadataKey::ComponentFilter = "ComponentFilter";
 
 
-void FBCRMetadata::ResetSettings()
+void FBlueprintComponentReferenceMetadata::ResetSettings()
 {
 #if !WITH_METADATA_MARSHALLER
-	*this = MetadataMarshallerDetail::GetDefaultStruct<FBCRMetadata>();
+	*this = MetadataMarshallerDetail::GetDefaultStruct<FBlueprintComponentReferenceMetadata>();
 #else // WITH_METADATA_MARSHALLER
-	FMetadataMarshaller::Reset<FBCRMetadata>(*this);
+	FMetadataMarshaller::Reset<FBlueprintComponentReferenceMetadata>(*this);
 #endif
 }
 
-void FBCRMetadata::LoadSettings(const FMetadataSettingsSource& Source)
+void FBlueprintComponentReferenceMetadata::LoadSettings(const FMetadataSettingsSource& Source)
 {
 	using namespace MetadataMarshallerDetail;
 
@@ -74,14 +74,14 @@ void FBCRMetadata::LoadSettings(const FMetadataSettingsSource& Source)
 
 #undef _PROCESS_PROPERTY_LOAD
 #else // WITH_METADATA_MARSHALLER
-	FMetadataMarshaller::Load<FBCRMetadata>(Source, *this);
+	FMetadataMarshaller::Load<FBlueprintComponentReferenceMetadata>(Source, *this);
 #endif
 }
 
-void FBCRMetadata::ApplySettings(FMetadataSettingsSource& Source, const FName& InChanged)
+void FBlueprintComponentReferenceMetadata::ApplySettings(FMetadataSettingsSource& Source, const FName& InChanged)
 {
 	using namespace MetadataMarshallerDetail;
-	using ThisStruct = FBCRMetadata;
+	using ThisStruct = FBlueprintComponentReferenceMetadata;
 
 	UE_LOG(LogComponentReferenceEditor, Verbose, TEXT("ApplySettingsToProperty(%s)"), *Source.GetName());
 
@@ -117,6 +117,6 @@ void FBCRMetadata::ApplySettings(FMetadataSettingsSource& Source, const FName& I
 
 #undef _PROCESS_PROPERTY_APPLY
 #else // WITH_METADATA_MARSHALLER
-	FMetadataMarshaller::Apply<FBCRMetadata>(Source, *this, InChanged);
+	FMetadataMarshaller::Apply<FBlueprintComponentReferenceMetadata>(Source, *this, InChanged);
 #endif
 }

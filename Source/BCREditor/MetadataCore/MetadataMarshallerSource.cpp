@@ -1,8 +1,7 @@
 ﻿// Copyright 2024, Aquanox.
 
 #include  "MetadataMarshallerSource.h"
-
-#include "BlueprintComponentReferenceHelper.h"
+#include "BCRHelper.h"
 #include "MetadataMarshallerContainer.h"
 #include "Engine/Blueprint.h"
 #include "Templates/TypeHash.h"

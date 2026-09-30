@@ -1,6 +1,6 @@
 // Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Modules/ModuleManager.h"
 #include "Components/ActorComponent.h"
 #include "Misc/EngineVersionComparison.h"
@@ -9,7 +9,7 @@
 #include "Serialization/StructuredArchive.h"
 #include "UObject/PropertyTag.h"
 
-IMPLEMENT_MODULE(FDefaultModuleImpl, BlueprintComponentReference);
+IMPLEMENT_MODULE(FDefaultModuleImpl, BCR);
 
 FBlueprintComponentReference::FBlueprintComponentReference()
 	: Mode(EBlueprintComponentReferenceMode::None)

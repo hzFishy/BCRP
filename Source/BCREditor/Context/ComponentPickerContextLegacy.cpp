@@ -1,8 +1,8 @@
 ﻿#include "ComponentPickerContext.h"
 
 #include "ComponentPickerContextFactory.h"
-#include "BlueprintComponentReferenceEditor.h"
-#include "BlueprintComponentReferenceHelper.h"
+#include "BCREditor.h"
+#include "BCRHelper.h"
 #include "Engine/World.h"
 #include "GameFramework/Pawn.h"
 #include "Kismet2/ComponentEditorUtils.h"

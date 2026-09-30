@@ -14,7 +14,7 @@ class UBlueprint;
 /**
  * An abstraction of various metadata sources, providing unified accessor for container
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMetadataSettingsSource
+class BCREDITOR_API FMetadataSettingsSource
 {
 public:
 	virtual ~FMetadataSettingsSource() = default;
@@ -119,7 +119,7 @@ public:
 /**
  *
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMetadataSettingsPropertySource : public FMetadataSettingsSource
+class BCREDITOR_API FMetadataSettingsPropertySource : public FMetadataSettingsSource
 {
 	const FProperty* const Source;
 	const UBlueprint* const Context;
@@ -140,7 +140,7 @@ public:
 /**
  *
  */
-class BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMetadataSettingsTypeSource : public FMetadataSettingsSource
+class BCREDITOR_API FMetadataSettingsTypeSource : public FMetadataSettingsSource
 {
 	const UStruct* Source = nullptr;
 public:

@@ -1,10 +1,11 @@
 // Copyright 2024, Aquanox.
 
-#include "BlueprintComponentReferenceEditor.h"
-#include "BlueprintComponentReferenceCustomization.h"
-#include "BlueprintComponentReferenceCustomizationExtras.h"
+#include "BCREditor.h"
+#include "BCRCustomization.h"
+#include "BCRCustomizationExtras.h"
 #include "MetadataCore/MetadataEditorVarCustomization.h"
 #include "BlueprintEditorModule.h"
+#include "SComponentPickerTableWidget.h"
 #include "HAL/IConsoleManager.h"
 #include "UnrealEdGlobals.h"
 #include "Misc/EngineVersionComparison.h"
@@ -12,7 +13,7 @@
 #include "Context/ComponentPickerContext.h"
 #include "Context/ComponentPickerContextFactory.h"
 
-IMPLEMENT_MODULE(FBCREditorModule, BlueprintComponentReferenceEditor);
+IMPLEMENT_MODULE(FBCREditorModule, BCREditor);
 
 DEFINE_LOG_CATEGORY(LogComponentReferenceEditor);
 

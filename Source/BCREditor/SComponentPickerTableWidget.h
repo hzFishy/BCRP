@@ -5,7 +5,7 @@
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/Views/SHeaderRow.h"
 #include "Widgets/Views/STableRow.h"
-#include "BlueprintComponentReferenceHelper.h"
+#include "BCRHelper.h"
 #include "Styling/SlateStyle.h"
 #include "Textures/SlateIcon.h"
 #include "Widgets/Views/STreeView.h"

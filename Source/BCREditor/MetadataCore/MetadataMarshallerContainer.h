@@ -14,7 +14,7 @@ class FMetadataSettingsSource;
  * Internal struct for metadata containers
  */
 USTRUCT()
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FMetadataContainerBase
+struct BCREDITOR_API FMetadataContainerBase
 {
 	GENERATED_BODY()
 public:

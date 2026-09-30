@@ -1,7 +1,7 @@
 ﻿#include "ComponentPickerContextFactory.h"
 
 #include "HAL/IConsoleManager.h"
-#include "BlueprintComponentReferenceEditor.h"
+#include "BCREditor.h"
 
 static FAutoConsoleCommand BCR_DumpInstances(
 	TEXT("BCR.DumpInstances"),

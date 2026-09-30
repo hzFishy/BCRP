@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Engine/DataAsset.h"
 #include "GameFramework/Actor.h"
 #include "BCRTestDataAsset.generated.h"

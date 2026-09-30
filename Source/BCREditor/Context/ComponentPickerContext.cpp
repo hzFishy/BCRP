@@ -1,8 +1,7 @@
 ﻿// Copyright 2024, Aquanox.
 
 #include "ComponentPickerContext.h"
-
-#include "BlueprintComponentReferenceHelper.h"
+#include "BCRHelper.h"
 #include "Engine/World.h"
 #include "GameFramework/Pawn.h"
 #include "Misc/CoreDelegates.h"

@@ -9,13 +9,13 @@
 #include "Engine/Blueprint.h"
 #include "Engine/SCS_Node.h"
 #include "Templates/TypeHash.h"
-#include "BlueprintComponentReference.h"
+#include "BCR.h"
 #include "Misc/EngineVersionComparison.h"
 
 /**
  * @see FSCSEditorTreeNodeComponentBase
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo
+struct BCREDITOR_API FComponentInfo
 {
 protected:
 	FName SubobjectName;
@@ -49,7 +49,7 @@ public:
 /**
  * @see FSCSEditorTreeNodeComponent
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Default : public FComponentInfo
+struct BCREDITOR_API FComponentInfo_Default : public FComponentInfo
 {
 private:
 	using Super = FComponentInfo;
@@ -69,7 +69,7 @@ public:
 /**
  * @see FSCSEditorTreeNodeInstanceAddedComponent
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Instanced : public FComponentInfo
+struct BCREDITOR_API FComponentInfo_Instanced : public FComponentInfo
 {
 private:
 	using Super = FComponentInfo;
@@ -90,7 +90,7 @@ public:
 /**
  *
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Unknown : public FComponentInfo
+struct BCREDITOR_API FComponentInfo_Unknown : public FComponentInfo
 {
 	EBlueprintComponentReferenceMode Mode;
 	FName Value;
@@ -111,7 +111,7 @@ struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Unknown : public FCo
 /**
  *
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Root : public FComponentInfo_Unknown
+struct BCREDITOR_API FComponentInfo_Root : public FComponentInfo_Unknown
 {
 	FComponentInfo_Root()
 	{
@@ -129,7 +129,7 @@ struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentInfo_Root : public FCompo
 /**
  *
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FHierarchyInfo
+struct BCREDITOR_API FHierarchyInfo
 {
 	TArray<TSharedPtr<FComponentInfo>> Nodes;
 	bool bDirty = false;
@@ -155,7 +155,7 @@ struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FHierarchyInfo
 /**
  *
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FHierarchyClassInfo : public FHierarchyInfo
+struct BCREDITOR_API FHierarchyClassInfo : public FHierarchyInfo
 {
 private:
 	using Super = FHierarchyInfo;
@@ -178,7 +178,7 @@ public:
 /**
  *
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FHierarchyInstanceInfo : public FHierarchyInfo
+struct BCREDITOR_API FHierarchyInstanceInfo : public FHierarchyInfo
 {
 private:
 	using Super = FHierarchyInfo;
@@ -211,7 +211,7 @@ struct FComponentPickerGroup
 /**
  * Represents component picker context
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentPickerContextBase
+struct BCREDITOR_API FComponentPickerContextBase
 {
 
 };
@@ -219,7 +219,7 @@ struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentPickerContextBase
 /**
  * Legacy context with manual subobject traversing
  */
-struct BLUEPRINTCOMPONENTREFERENCEEDITOR_API FComponentPickerContext : public FComponentPickerContextBase
+struct BCREDITOR_API FComponentPickerContext : public FComponentPickerContextBase
 {
 	FString DebugLabel;
 

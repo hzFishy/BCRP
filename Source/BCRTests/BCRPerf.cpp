@@ -1,9 +1,9 @@
-﻿#include "BlueprintComponentReferenceTests.h"
+﻿#include "BCRTests.h"
 #include "BCRTestActor.h"
 #include "BCRTestDataAsset.h"
 #include "BCRTestActorComponent.h"
-#include "BlueprintComponentReference.h"
-#include "BlueprintComponentReferenceLibrary.h"
+#include "BCR.h"
+#include "BCRLibrary.h"
 #include "BlueprintComponentReferenceMetadata.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
@@ -12,7 +12,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "CachedBlueprintComponentReference.h"
+#include "CachedBCR.h"
 
 #if WITH_CACHED_COMPONENT_REFERENCE_TESTS && WITH_DEV_AUTOMATION_TESTS
 
