@@ -19,7 +19,7 @@ DEFINE_LOG_CATEGORY(LogComponentReferenceEditor);
 
 namespace
 {
-	static const FName BCRModuleName("BlueprintComponentReferenceEditor");
+	static const FName BCRModuleName("BCREditor");
 
 	using FContextFactoryImpl = FLegacyContextFactory;
 }
